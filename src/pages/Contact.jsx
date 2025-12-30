@@ -14,7 +14,7 @@ export default function Contact() {
     setStatus({ message: "Sending...", type: "info" });
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch("https://e-far-website-backend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -281,7 +281,7 @@ export default function Contact() {
                         className="text-brand-orange"
                         style={{ color: '#D4991B' }}
                       >
-                        contact@efar.team
+                        eformulaashwariders@gmail.com
                       </p>
                     </div>
                   </div>
@@ -305,7 +305,8 @@ export default function Contact() {
                         className="text-brand-blue"
                         style={{ color: '#00A3E0' }}
                       >
-                        SVPCET Campus, India
+                        M/S VNCENT PALLOTTI COLLAGE OF ENGINEERING
+                        WARDHA ROAD, GAVSI, MANAPUR, Nagpur, Maharashtra, 441108
                       </p>
                     </div>
                   </div>
@@ -348,7 +349,7 @@ export default function Contact() {
                       href="https://www.instagram.com/eformula_ashwariders/"
                       target="_blank"
                       rel="noreferrer"
-                      className="w-12 h-12 flex items-center justify-center rounded-full bg-brand-orange/20 hover:bg-brand-orange transition-all duration-300 shadow-lg hover:scale-110"
+                      className="w-15 h-15 flex items-center justify-center rounded-full bg-brand-orange/20 hover:bg-brand-orange transition-all duration-300 shadow-lg hover:scale-110"
                       style={{ backgroundColor: 'rgba(212, 153, 27, 0.2)' }}
                     >
                       <FaInstagram className="w-5 h-5" style={{ color: '#D4991B' }} />

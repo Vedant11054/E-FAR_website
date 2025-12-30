@@ -12,6 +12,12 @@ export default defineConfig({
     },
   },
   server: {
+    // Ensure nothing is cached in DEV by the browser or proxies
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
+      'Pragma': 'no-cache',
+      'Expires': '0',
+    },
     hmr: {
       overlay: true,
       host: 'localhost',
